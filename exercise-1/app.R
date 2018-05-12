@@ -5,18 +5,22 @@ library(shiny)
 
 # Define a new `ui` variable. This variable should be assigned a `fluidPage()` 
 # layout, which should be passed the following:
-
-
+ui <- fluidPage(
+  
   # A top level header: "First Shiny Website"
+  h1("First Shiny Website"),
   
-
   # A Paragraph, describing your excitement: include some `strong` text
+  p(
+    "This is my", strong("first"), "shiny project, and I feel..."
+  ),
   
-
   # An image with this `src`
   # https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif
-  
-  
+  img(
+    "",
+    src = "https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif"
+  ),
   # Another paragraph about a slider: include some `em` text
   
   
